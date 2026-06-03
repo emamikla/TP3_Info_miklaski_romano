@@ -4,16 +4,27 @@
 <body>
     <main>
         <h1>EL AHORCADO</h1>
-        <h3>Bienvenido al ahorcado! Debes adivinar la palabra con 8 errores.</h3>
+        <h3>Bienvenido al ahorcado! Debes adivinar la palabra con un máximo de 10 intentos.</h3>
         <section>
         <div>
             <h4>La palabra es:</h4>
-            <p>
             @for(int i = 0; i < ViewBag.Palabra.Length; i++)
             {
-                _
+                <p>_ </p> 
             }
-            </p>
+        </div>
+        <div>
+            <input type="char" id= "letra" placeholder="Ingresa la letra"></br></br>
+            <button onclick = "ArriesgarLetra()">PROBAR</button>
+        </div>
+        </section>
+        <section> 
+            <h3>Letras que no están: </h3>
+            <div id = "letrasFaltantes">
+            </div>
+        </section>
+        <section>
+        <div id= "resultado">
         </div>
         </section>
     </main>
