@@ -8,6 +8,8 @@ public class PalabrasController : Controller
 {
     public IActionResult Index()
     {
+        PalabrasAhorcado palabrasAhorcado = new PalabrasAhorcado();
+        ViewBag.Palabra = palabrasAhorcado.obtenerPalabra();
         return View();
     }
 }
