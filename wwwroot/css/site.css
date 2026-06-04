@@ -30,11 +30,6 @@ body {
   text-align: start;
 }
 
-p{
-  float: inline-start;
-  margin-right: 1%;
-  font-size: 240%;
-}
 body main div{
   clear: both;
   margin-bottom: 3%;
