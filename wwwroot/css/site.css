@@ -37,3 +37,125 @@ body main div{
 button{
   size: 1000%;
 }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: Arial;
+  background-color: #bde7ff;
+  color: black;
+}
+
+main {
+  background-color: white;
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  border: 3px solid #0077cc;
+  border-radius: 15px;
+  text-align: center;
+}
+
+h1 {
+  color: #005fa3;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+h3 {
+  color: #333333;
+}
+
+h4 {
+  color: #0077cc;
+}
+
+section {
+  background-color: #e8f6ff;
+  border: 2px solid #7ccfff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+#guionPalabra {
+  background-color: white;
+  border: 2px dashed #0077cc;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #003f6b;
+}
+
+#intentosRestantes {
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#letrasFaltantes {
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 22px;
+  color: red;
+}
+
+#resultado {
+  font-size: 25px;
+  font-weight: bold;
+  color: green;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid #0077cc;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #guionPalabra {
+    font-size: 25px;
+  }
+}
+
