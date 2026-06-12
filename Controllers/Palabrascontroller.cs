@@ -12,4 +12,8 @@ public class PalabrasController : Controller
         ViewBag.Palabra = palabrasAhorcado.obtenerPalabra();
         return View();
     }
+    public IActionResult AgregarPalabra()
+    {
+        return View();
+    }
 }

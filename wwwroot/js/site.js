@@ -1,6 +1,5 @@
 ﻿const palabraElem = document.getElementById("palabra");
 let palabraElegida = document.getElementById("palabra").value;
-const letra = document.getElementById("letra").value.toUpperCase();
 let listaLetras = palabraElegida.split('');
 
 let palabraOculta = [];

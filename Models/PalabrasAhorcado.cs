@@ -1,12 +1,15 @@
+using Microsoft.Data.SqlClient;
+using Dapper; 
 namespace tp3.Models;
 
 public class PalabrasAhorcado
 {
     private List<string> palabras;
+    BD BD = new BD();
 
     public PalabrasAhorcado()
     {
-        palabras = new List<string>{"AVENTURAS", "PELOTAZO", "CAMINANTE", "BIBLIOTECA", "MARIPOSAS", "CARRETERA", "ELEFANTES", "MONTAÑAS", "VERDADERO", "ZAPATERO"};
+        palabras = BD.hacerLista();
     }
 
     public string obtenerPalabra()
@@ -15,5 +18,10 @@ public class PalabrasAhorcado
         int numero = random.Next(0, palabras.Count);
 
         return palabras[numero];
+    }
+
+    public void agregarPalabra (string palabra){
+        BD.agregarPalabra(palabra); 
+        palabras = BD.hacerLista();
     }
 }
